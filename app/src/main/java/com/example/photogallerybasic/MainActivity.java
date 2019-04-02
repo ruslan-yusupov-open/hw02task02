@@ -40,13 +40,8 @@ public class MainActivity extends AppCompatActivity {
         forwardButton.setOnClickListener((view) -> {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);
-            MainActivity.this.finish();
         });
 
-        backButton.setOnClickListener((view) -> {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
-            MainActivity.this.finish();
-        });
+        backButton.setOnClickListener((view) -> finish());
     }
 }
